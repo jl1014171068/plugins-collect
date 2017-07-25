@@ -12,3 +12,6 @@ Lists
    
 * jquery倒计时样式组件
    官网地址:http://flipclockjs.com/#
+   
+* jQuery Flipster是一个3D封面流效果
+   官网地址:https://github.com/drien/jquery-flipster
