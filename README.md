@@ -9,3 +9,6 @@ Lists
    
 * 二维码生成-背景图叠加
    官网地址:https://github.com/kciter/qart.js
+   
+* jquery倒计时样式组件
+   官网地址:http://flipclockjs.com/#
