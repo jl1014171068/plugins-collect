@@ -15,3 +15,8 @@ Lists
    
 * jQuery Flipster是一个3D封面流效果
    官网地址:https://github.com/drien/jquery-flipster
+   
+*  轮播图组件
+   官网地址:https://github.com/jssor/slider
+
+
