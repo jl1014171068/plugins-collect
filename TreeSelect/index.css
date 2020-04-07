@@ -1,0 +1,220 @@
+ul,
+li {
+	list-style: none;
+}
+.tree-select  .hide {
+	display: none !important;
+}
+.tree-select .ts-checkbox {
+	color: #606266;
+	font-weight: 500;
+	font-size: 14px;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	white-space: nowrap;
+	user-select: none;
+	margin-right: 30px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 15px;
+	display: block;
+}
+
+.tree-select .ts-checkbox.is-checked .ts-checkbox__input .ts-checkbox__inner {
+	background-color: #409eff;
+	border-color: #409eff;
+}
+.tree-select  .ts-checkbox.is-checked .ts-checkbox__input .ts-checkbox__inner::after {
+	transform: rotate(45deg) scaleY(1);
+}
+.tree-select  .ts-checkbox .ts-checkbox__input .ts-checkbox__inner::after {
+	box-sizing: content-box;
+	content: "";
+	border: 1px solid #fff;
+	border-left: 0;
+	border-top: 0;
+	position: absolute;
+	top: 1px;
+	transform: rotate(45deg) scaleY(0);
+	transition: transform .15s ease-in .05s;
+	transform-origin: center;
+	height: 6px;
+	width: 3px;
+	left: 4px;
+}
+.tree-select .ts-checkbox .ts-checkbox__input .ts-checkbox__inner {
+	height: 14px;
+	width: 14px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid #dcdfe6;
+	border-radius: 2px;
+	box-sizing: border-box;
+	background-color: #fff;
+	z-index: 1;
+	transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46),
+		background-color .25s cubic-bezier(.71, -.46, .29, 1.46);
+}
+.tree-select  .ts-checkbox .ts-checkbox__input .ts-checkbox__original {
+	opacity: 0;
+	outline: none;
+	position: absolute;
+	margin: 0;
+	width: 0;
+	height: 0;
+	z-index: -1;
+	cursor: pointer;
+}
+.tree-select  .ts-checkbox .ts-checkbox__label,.tree-select .ts-panel__label{
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	box-sizing: border-box;
+	padding-left: 24px;
+	line-height: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.tree-select  .ts-checkbox .ts-checkbox__triangle.active::after {
+	border-top: 4px solid transparent;
+	border-bottom: 4px solid transparent;
+	border-left: 4px solid #d3dce6;
+	border-right: none;
+	left: 32px;
+	top: 10px;
+}
+.tree-select  .ts-checkbox .ts-checkbox__triangle::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 4px solid #d3dce6;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	position: absolute;
+	left: 31px;
+	top: 13px;
+	transition: all .25s cubic-bezier(.71, -.46, .29, 1.46);
+}
+.ts-checkbox .ts-checkbox__triangle {
+}
+.tree-select  .ts-checkbox .ts-checkbox__input {
+	white-space: nowrap;
+	cursor: pointer;
+	outline: none;
+	display: inline-block;
+	line-height: 1;
+	position: absolute;
+	top: 8px;
+	vertical-align: middle;
+}
+
+.tree-select {
+}
+.tree-select .ts-search input:focus{
+    outline: none;
+    border-color: #409eff;
+}
+.tree-select .ts-search input {
+	height: 32px;
+	width: 100%;
+	font-size: 12px;
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 16px;
+	padding:0 15px;
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #dcdfe6;
+    color: #606266;
+    line-height: 40px;
+    outline: none;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+}
+.tree-select .ts-search {
+	text-align: center;
+	margin: 15px;
+	box-sizing: border-box;
+	display: block;
+	width: auto;
+}
+.tree-select .ts-panel .ts-panel__header {}
+.tree-select .ts-panel .ts-panel__header .ts-checkbox{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.tree-select .ts-panel .ts-panel__header .ts-panel__count{
+    position: absolute;
+    right: 15px;
+    color: #909399;
+    font-size: 12px;
+    font-weight: 400;
+    top:0;
+}
+.tree-select .ts-panel .ts-panel__header {
+	height: 32px;
+	line-height: 32px;
+	background: #f5f7fa;
+	margin: 0;
+	padding-left: 15px;
+	border-bottom: 1px solid #ebeef5;
+	box-sizing: border-box;
+    color: #000;
+    position: relative;
+}
+.tree-select .ts-panel {
+	border: 1px solid #ebeef5;
+	border-radius: 4px;
+	overflow: hidden;
+	background: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	width: 220px;
+	max-height: 100%;
+	box-sizing: border-box;
+	position: relative;
+	margin: 0 18px;
+}
+.tree-select .ts-right__ul li{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    box-sizing: border-box;
+    padding-left: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #606266;
+    position: relative;
+    cursor: pointer;
+}
+.tree-select .ts-left__ul,.tree-select .ts-right__ul{
+    height: 194px;
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+    height: 246px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.tree-select .ts-panel__label{
+    padding-left:0;
+}
+.tree-select .ts-ulli__delete{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 0;
+    background: 0 0;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    font-size: 12px
+}

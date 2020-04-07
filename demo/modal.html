@@ -1,0 +1,45 @@
+<!--
+ * @Author: 末空
+ * @since: 2020-04-07 16:00:32
+ * @lastTime: 2020-04-07 16:02:30
+ * @LastAuthor: 末空
+ * @message: 弹出层
+ * @custom_string_末空: 0.0
+ -->
+<!--
+ * @Author: 末空
+ * @since: 2020-04-07 15:48:23
+ * @lastTime: 2020-04-07 15:59:40
+ * @LastAuthor: 末空
+ * @message: 
+ * @custom_string_末空: 0.0
+ -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Modal/index.css">
+    <script src="../Modal/index.js"></script>
+</head>
+
+<body>
+
+</body>
+<script>
+    const modal1 = new Modal({
+        'title': '新增装车方案（连云港转运中心）222',
+        'confirm': (el) => {
+            console.log('这里应该是对象方式吧22', el)
+        },
+        content: '<b>2222</b>'
+    })
+    modal1.show()
+</script>
+
+</html>

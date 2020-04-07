@@ -1,0 +1,52 @@
+<!--
+ * @Author: 末空
+ * @since: 2020-04-07 15:48:23
+ * @lastTime: 2020-04-07 15:59:40
+ * @LastAuthor: 末空
+ * @message: 
+ * @custom_string_末空: 0.0
+ -->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../TreeSelect/index.css">
+    <script src="../TreeSelect/index.js"></script>
+    <script src="../TreeSelect/json.js"></script>
+</head>
+
+<body>
+
+</body>
+<script>
+    const params = {
+        el: `body`,
+        data: json,
+        title: '全国',
+        beforeContent: `<span>1</span>`,
+        afterContent: `<span>2</span>`,
+        allFlag: true,
+        searchParentSelect: true, // 搜索时是否父子联动
+        parentSelectChildren: true, // 父级勾选取消，消除子集选中
+        searchFlag: true, //是否开启搜索功能
+        idSearchFlag: false, //是否开启id搜索
+        fuzzyFlag: true, //是否开启模糊搜索
+        selectedIdS: [], //针对默认传入
+        comKeyId: 'id',
+        comKeyChildren: 'children',
+        comKeyName: 'name',
+        changed: function () {}, //选中变化时
+    };
+    t1 = new TreeSelect(params);
+    t1.on('changed', e => {
+        console.log(e)
+    });
+</script>
+
+</html>
