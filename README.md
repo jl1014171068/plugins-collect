@@ -20,3 +20,7 @@ Lists
    官网地址:https://github.com/jssor/slider
 
 
+自写组件
+-----
+* TreeSelect用于省市区联动，暂时只项目中应用，未做细处理拆分公用
+* Modal 用于弹出层
